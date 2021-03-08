@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            center div{
+                display: flex;
+                justify-content: space-around;
+            }
+            center div div{
+                display: flex;
+                flex-flow: column;
+                padding: 10px;
+            }
+            label{
+                font-size: small;
+                text-align: left;
+                padding: 5px;
+                margin: 5px;
+            }
+            div input{
+                padding: 5px;
+                margin: 5px;
+                border: 1px solid #dfe1e5;
+                border-radius: 4px;
+                outline: none;
+            }
+            menu a:hover, .button:hover, div input:hover{
+                box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            }
+            .button{
+                box-shadow: none;
+                background-color: #4d90fe;                
+                border: 1px solid #3079ed;
+                color: #fff;
+                font-size: small;
+                font-weight: bold;
+                padding: 0 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <menu>
+            <a href="search.html">Google Search</a>
+            <a href="isearch.html">Image Search</a>
+        </menu>
+        <div class="divformu">
+        <a href="https://google.com/doodles"><img src="googlelogo_color_272x92dp.png" height="92"></a>
+        <form action="https://google.com/search">
+            <center>
+                <div>
+                    <div>
+                        <label for="as_q">all these words: </label>
+                        <label for="as_epq">this exact word or phrase: </label>
+                        <label for="as_oq">any of these words: </label>
+                        <label for="as_eq">none of these words: </label>
+                    </div>
+                    <div>
+                        <input type="text" name="as_q">
+                        <input type="text" name="as_epq">
+                        <input type="text" name="as_oq">
+                        <input type="text" name="as_eq">
+                    </div>
+                </div>
+                <input type="submit" value="Advanced Search" class="button">
+            </center>
+        </form>
+        </div>
+    </body>
+</html>
